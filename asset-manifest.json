@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/HW-20-calc/static/css/main.3f414567.css",
+    "main.js": "/HW-20-calc/static/js/main.c0860c7c.js",
+    "index.html": "/HW-20-calc/index.html",
+    "main.3f414567.css.map": "/HW-20-calc/static/css/main.3f414567.css.map",
+    "main.c0860c7c.js.map": "/HW-20-calc/static/js/main.c0860c7c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f414567.css",
+    "static/js/main.c0860c7c.js"
+  ]
+}
