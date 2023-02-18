@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { authActionTypes } from "../store/auth/AuthReducer";
+import { authActions } from "../store/auth/authSlice";
 import classes from "./Auth.module.css";
 
 const Auth = () => {
@@ -20,12 +20,11 @@ const Auth = () => {
   const SubmitHandler = (e) => {
     e.preventDefault();
 
-    if (formState.email === "test@gmail.com" && formState.password === "123") {
-      dispatch({
-        type: authActionTypes.LOGIN,
-        payload: formState.email,
-      });
-    }
+    dispatch({
+      type: authActions.logIn,
+      email: formState.email,
+      password: formState.password,
+    });
   };
 
   return (
@@ -35,7 +34,7 @@ const Auth = () => {
           <div className={classes.control}>
             <label htmlFor="email">Email</label>
             <input
-              type="email"
+              type="text"
               id="email"
               onChange={inputChangeHandler("email")}
               value={formState.email}
